@@ -10,7 +10,7 @@ const Furniture = () => {
     if (option === "all") {
       return true;
     } else {
-      return id == option;
+      return id === option;
     }
   };
   return (
@@ -26,7 +26,7 @@ const Furniture = () => {
             return (
               <div
                 onClick={() => setActive(v.name)}
-                className={active == v.name ? "active link" : "link"}
+                className={active === v.name ? "active link" : "link"}
               >
                 {v.name}
               </div>
